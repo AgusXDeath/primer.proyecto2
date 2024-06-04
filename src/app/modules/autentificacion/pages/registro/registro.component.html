@@ -1,1 +1,39 @@
-<p>registro works!</p>
+<div class="container">
+    <div class="row"> 
+<h1>Registrate</h1>
+<i class="material-icons">person</i>
+<!-- nombre del usuario -->
+<mat-form-field appearance="fill">
+<mat-label>ingrese un nombre de usuario</mat-label>
+<input [(ngModel)]="usuarios.nombre" matInput placeholder="Ej:Pedro" required>
+<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+</mat-form-field>
+<!--apellido de usuario-->
+<mat-form-field appearance="fill">
+    <mat-label>ingrese su apellido</mat-label>
+    <input [(ngModel)]="usuarios.apellido" matInput placeholder="Ej:Cuevas" required>
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    
+    </mat-form-field>
+    <!--email del usuario-->
+    <mat-form-field appearance="fill">
+        <mat-label>ingrese su email</mat-label>
+        <input [(ngModel)]="usuarios.email" matInput placeholder="Ej:Pedro@gmail.com" required>
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+        </mat-form-field>
+        <!--rol de usuario-->
+        <mat-form-field appearance="fill">
+            <mat-label>ingrese rol de usuario</mat-label>
+            <select [(ngModel)]="usuarios.rol" matNativeControl required>
+            <option value="admin">administrador</option>
+            <option value="visit">visitante</option>
+            </select>
+            </mat-form-field>
+<!-- Contraseña del usuario -->
+
+    <!-- Botón para enviar la informacion a la Base de Datos -->
+    <button class="boton" mat-raised-button color="primary">Registrar</button>
+    </div>
+</div>

@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { SharedModule } from './modules/shared/shared.module';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    InicioComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
